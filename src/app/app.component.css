@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "lol";
+    src: url(../assets/Font/LeagueOfLegends.ttf);
+}
+*{
+    background-color: #051c24;
+    font-family: "lol";
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.principal{
+    width: 100%;
+}

@@ -1,0 +1,43 @@
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #051c24;
+    height: 100px;
+}
+.secciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-img{
+    height: 100px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-img img{
+    height: 95%;
+}
+.titulo{
+    color: white;
+}
+
+.titulo1:hover {
+    color: #ecbd25;
+}
+.titulo2:hover {
+    color: #0bb711;
+}
+.titulo3:hover {
+    color: #1c64d1;
+}
+.titulo4:hover {
+    color: #c32413;
+}
+.titulo5:hover {
+    color: #ecbd25;
+}

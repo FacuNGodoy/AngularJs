@@ -1,0 +1,17 @@
+.carrusel{
+    height: 700px;
+}
+.titulo{
+    color: white;
+    font-size: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+}
+.carruselImg{
+    height: 950px;
+}
+.titulo h5{
+    font-size: 90px;
+}

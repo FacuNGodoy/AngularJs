@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "lol";
+    src: url(../../../assets/Font/LeagueOfLegends.ttf);
+}
+*{
+    background-color: #051c24;
+    font-family: "lol";
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img{
+    height: 100px;
+    margin: 40px;
+}
+.footer-img img{
+    height: 100%;
+}
+.redes{
+    margin: 10px 0px;
+}
+.diseño{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

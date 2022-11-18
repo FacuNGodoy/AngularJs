@@ -1,0 +1,36 @@
+.toolbar-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 20px 0px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 200px;
+    padding: 20px 0px;
+    border-width: 4px;
+    border-color: #ecbd25;
+    border-style: double;
+}
+
+.titulo1:hover {
+    color: #ecbd25;
+}
+.titulo2:hover {
+    color: #0bb711;
+}
+.titulo3:hover {
+    color: #1c64d1;
+}
+.titulo4:hover {
+    color: #c32413;
+}
+.titulo5:hover {
+    color: #ecbd25;
+}
