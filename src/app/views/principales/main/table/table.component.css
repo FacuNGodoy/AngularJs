@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.personajesSeccion{
+    background-color: #051c24;
+    display: flex;
+    justify-content: center;
+}
+.botonPersonajes{
+    font-size: 20px;
+    margin: 15px;
+    padding: 15px;
+}
+.botonPersonajes:hover{
+    background-color: #ecbd25;
+    color: #051c24;
+}
+.personajesLista{
+    background-color: #051c24;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.view{
+    color: white;
+    list-style: none;
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    font-size: 18px;
+}
+.hide{
+    display: none;
+}
+.tituloSupp:hover{
+    color: #ecbd25;
+}
