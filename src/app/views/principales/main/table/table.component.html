@@ -1,10 +1,12 @@
 <div class="personajesSeccion">
-    <button class="botonPersonajes" (click)="supp()">Personajes</button>
+    <button class="botonPersonajes" (click)="supp()">Supp</button>
 </div>
 <div class="persanajeSuppLista">
     <ul class="personajesLista">
-        <li [ngClass]="show ? 'view' : 'hide' " *ngFor="let supp of personajes | filtroClase:support">
-            <p class="tituloSupp">{{supp.nombre}}</p>
+        <!-- [ngClass]="show ? 'view' : 'hide' " *ngFor="let supp of personajes | filtroClase:support" -->
+        <li *ngFor="let personaje of personajes| filtroClase:support">
+            <p class="tituloSupp">{{personaje.name}}</p>
         </li>
     </ul>
 </div>
+<app-register></app-register>

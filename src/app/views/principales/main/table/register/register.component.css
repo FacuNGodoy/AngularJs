@@ -1,0 +1,34 @@
+*{
+    font-family: "lol";
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor{
+    background-color: #051c24;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+.formulario{
+    width: 400px;
+}
+.personaje{
+    width: 100%;
+    align-items: center;
+}
+.selector{
+    width: 300px;
+}
+.linea{
+    width: 50px;
+}

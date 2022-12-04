@@ -5,18 +5,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FiltroClasePipe implements PipeTransform {
 
- transform(list: [], support: string): any {
-  // console.log(list);
-  //  console.log(support);
+ transform(list: any, support: string): any {
+    
    if (!support) {
     return list
    }
-   const listaFiltrada = list.filter(linea=>(linea['linea']))
-  //  const listaFiltrada = list.filter(linea=>(linea['linea']).includes(support))
-  // return listaFiltrada
+
+  const listaFiltrada = list.filter((linea:any)=>linea.line.includes(support))
+
+  return listaFiltrada
    
-   console.log(listaFiltrada);
-   
-  return list
  }
 }

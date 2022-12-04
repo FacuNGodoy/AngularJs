@@ -1,36 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import data from '../table/personaje.json';
 
-interface Personaje {
-  nombre: string;
-  linea: string;
-}
-
-const PersonajesSupp: Personaje[]  = [
-  {
-    nombre: "Thresh",
-    linea: "Supp",
-  },
-  {
-    nombre: "Sett",
-    linea: "Top",
-  },
-  {
-    nombre: "Ahri",
-    linea: "Mid",
-  },
-  {
-    nombre: "Zyra",
-    linea: "Supp",
-  },
-  {
-    nombre: "Janna",
-    linea: "Supp",
-  },
-  {
-    nombre: "Karman",
-    linea: "Supp",
-  }
-]
 
 @Component({
   selector: 'app-table',
@@ -41,17 +11,25 @@ export class TableComponent implements OnInit {
 
   show: boolean=false;
   support: string="";
-  personajes = PersonajesSupp as [];
+  personajes = data;
 
   constructor() { }
 
   ngOnInit(): void {
+    // this.consoleLog(data[0].name)
   }
 
   supp() {
-    this.support="supp";
+    if(!this.support){
+      this.support="supp";
+    } else{
+      this.support="";
+    }
     this.show = !this.show
     console.log(this.show);
-    
+  }
+
+  consoleLog(valor:any){
+    console.log(valor);
   }
 }

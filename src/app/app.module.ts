@@ -8,7 +8,8 @@ import { MainComponent } from './views/principales/main/main.component';
 import { FooterComponent } from './views/principales/footer/footer.component';
 import { TableComponent } from './views/principales/main/table/table.component';
 import { FiltroClasePipe } from './pipes/filtro-clase.pipe';
-
+import { RegisterComponent } from './views/principales/main/table/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +19,11 @@ import { FiltroClasePipe } from './pipes/filtro-clase.pipe';
     FooterComponent,
     TableComponent,
     FiltroClasePipe,
+    RegisterComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
