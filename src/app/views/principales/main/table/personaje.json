@@ -136,5 +136,137 @@
         "id":23,
         "line":"top",
         "img": "../../../../../assets/Img/personajes/darius.png"
+    },
+    {
+        "name":"Diana",
+        "id":24,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/diana.png"
+    },
+    {
+        "name":"Draven",
+        "id":25,
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/draven.png"
+    },
+    {
+        "name":"Dr. Mundo",
+        "id":26,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/drmundo.png"
+    },
+    {
+        "name":"Ekko",
+        "id":27,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/ekko.png"
+    },
+    {
+        "name":"Elise",
+        "id":28,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/elise.png"
+    },
+    {
+        "name":"Evelyn",
+        "id":29,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/evelyn.png"
+    },
+    {
+        "name":"Ezreal",
+        "id":30,
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/ezreal.png"
+    },
+    {
+        "name":"Fiddlesticks",
+        "id":31,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/fidd.png"
+    },
+    {
+        "name":"Fiora",
+        "id":32,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/fiora.png"
+    },
+    {
+        "name":"Fizz",
+        "id":33,
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/fizz.png"
+    },
+    {
+        "name":"Galio",
+        "id":34,
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/galio.png"
+    },
+    {
+        "name":"Gangplank",
+        "id":35,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/gangplank.png"
+    },
+    {
+        "name":"Garen",
+        "id":36,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/garen.png"
+    },
+    {
+        "name":"Gnar",
+        "id":37,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/gnar.png"
+    },
+    {
+        "name":"Gragas",
+        "id":38,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/gragas.png"
+    },
+    {
+        "name":"Graves",
+        "id":39,
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/graves.png"
+    },
+    {
+        "name":"Gwen",
+        "id":40,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/gwen.png"
+    },
+    {
+        "name":"Hecarim",
+        "id":41,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/hecarim.png"
+    },
+    {
+        "name":"Heimendinger",
+        "id":42,
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/heim.png"
+    },
+    {
+        "name":"Illaoi",
+        "id":43,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/illaoi.png"
+    },
+    {
+        "name":"Irelia",
+        "id":44,
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/irelia.png"
+    },
+    {
+        "name":"Ivern",
+        "id":45,
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/ivern.png"
     }
 ]

@@ -1,11 +1,26 @@
 <div class="personajesSeccion">
-    <button class="botonPersonajes" (click)="top()">Top</button>
-    <button class="botonPersonajes" (click)="jg()">Jg</button>
-    <button class="botonPersonajes" (click)="mid()">Mid</button>
-    <button class="botonPersonajes" (click)="adc()">ADC</button>
-    <button class="botonPersonajes" (click)="supp()">Supp</button>
+    <button class="botonPersonajes" (click)="top()">
+        <span class="linea">Top</span>
+        <img src="../../../../../assets/Img/lineas/top.png" alt="Top">
+    </button>
+    <button class="botonPersonajes" (click)="jg()">
+        <span class="linea">Jg</span>
+        <img src="../../../../../assets/Img/lineas/jg.png" alt="Jg">
+    </button>
+    <button class="botonPersonajes" (click)="mid()">
+        <span class="linea">Mid</span>
+        <img src="../../../../../assets/Img/lineas/mid.png" alt="Mid">
+    </button>
+    <button class="botonPersonajes" (click)="adc()">
+        <span class="linea">ADC</span>
+        <img src="../../../../../assets/Img/lineas/adc.png" alt="ADC">
+    </button>
+    <button class="botonPersonajes" (click)="supp()">
+        <span class="linea">Supp</span>
+        <img src="../../../../../assets/Img/lineas/supp.png" alt="Supp">
+    </button>
 </div>
-<div class="persanajeSuppLista">
+<div>
     <ul class="personajesLista">
         <!-- [ngClass]="show ? 'view' : 'hide' " *ngFor="let supp of personajes | filtroClase:support" -->
         <li class="personaje" *ngFor="let personaje of personajes| filtroClase:support">

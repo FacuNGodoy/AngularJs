@@ -2,6 +2,7 @@
     margin:0px;
     padding:0px;
 }
+/* Boton Filtro de Linea */
 .personajesSeccion{
     background-color: #051c24;
     display: flex;
@@ -10,12 +11,26 @@
 .botonPersonajes{
     font-size: 20px;
     margin: 15px;
-    padding: 15px;
+    padding: 0px;
+    height: 90px;
+    width: 90px;
+    background-color: #051c24;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-color: #ecbd25;
+    transition: 1s;
+}
+.botonPersonajes img{
+    height: 70%;
+    width: 70%;
 }
 .botonPersonajes:hover{
-    background-color: #ecbd25;
-    color: #051c24;
+    background-color: rgb(236, 189, 37,0.8);
 }
+/* Champion Select */
 .personajesLista{
     background-color: #051c24;
     color: white;
@@ -38,7 +53,11 @@
     border-radius: 15px;
 }
 .tituloPersonaje{
+    visibility: hidden;
+}
+.personaje:hover>.tituloPersonaje{
     position: absolute;
+    visibility: visible;
     bottom: 0;
     width: 100%;
     color: white;
@@ -46,7 +65,7 @@
     text-align: center;
 }
 .personaje:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     border-color: #ecbd25;
     border-width: 3px;
     border-style: ridge;
