@@ -20,9 +20,36 @@
     background-color: #051c24;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.personaje{
+    display: flex;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    transition: 1s;
+}
+.personaje img{
+    border-radius: 15px;
+}
+.tituloPersonaje{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: rgb(0,0,0,.4);
+    text-align: center;
+}
+.personaje:hover{
+    transform: scale(1.1);
+    border-color: #ecbd25;
+    border-width: 3px;
+    border-style: ridge;
 }
 .view{
     color: white;
@@ -34,7 +61,4 @@
 }
 .hide{
     display: none;
-}
-.tituloSupp:hover{
-    color: #ecbd25;
 }

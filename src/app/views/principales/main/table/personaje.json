@@ -2,116 +2,139 @@
     {
         "name":"Aatrox",
         "id":1,
-        "line":"top"
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/aatrox.png"
     },
     {
         "name":"Ahri",
         "id":2,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/ahri.png"
     },
     {
         "name":"Akali",
         "id":3,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/akali.png"
     },
     {
         "name":"Akshan",
         "id":4,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/akshan.png"
     },
     {
         "name":"Alistar",
         "id":5,
-        "line":"support"
+        "line":"support",
+        "img": "../../../../../assets/Img/personajes/alistar.png"
     },
     {
         "name":"Amumu",
         "id":6,
-        "line":"jungle"
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/amumu.png"
     },
     {
         "name":"Anivia",
         "id":7,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/anivia.png"
     },
     {
         "name":"Annie",
         "id":8,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/annie.png"
     },
     {
         "name":"Aphelios",
         "id":9,
-        "line":"adc"
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/aphelios.png"
     },
     {
         "name":"Ashe",
         "id":10,
-        "line":"adc"
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/ashe.png"
     },
     {
         "name":"Aurelion Sol",
         "id":11,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/aurelion.png"
     },
     {
         "name":"Azir",
         "id":12,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/azir.png"
     },
     {
         "name":"Bardo",
         "id":13,
-        "line":"support"
+        "line":"support",
+        "img": "../../../../../assets/Img/personajes/bardo.png"
     },
     {
         "name":"Bel'Veth",
         "id":14,
-        "line":"jungle"
+        "line":"jungle",
+        "img": "../../../../../assets/Img/personajes/bel.png"
     },
     {
         "name":"Blitzcrank",
         "id":15,
-        "line":"support"
+        "line":"support",
+        "img": "../../../../../assets/Img/personajes/blitzcrank.png"
     },
     {
         "name":"Brand",
         "id":16,
-        "line":"support"
+        "line":"support",
+        "img": "../../../../../assets/Img/personajes/brand.png"
     },
     {
         "name":"Braum",
         "id":17,
-        "line":"support"
+        "line":"support",
+        "img": "../../../../../assets/Img/personajes/braum.png"
     },
     {
         "name":"Caitlyn",
         "id":18,
-        "line":"adc"
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/caitlyn.png"
     },
     {
         "name":"Camille",
         "id":19,
-        "line":"top"
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/camille.png"
     },
     {
         "name":"Cassiopedia",
         "id":20,
-        "line":"mid"
+        "line":"mid",
+        "img": "../../../../../assets/Img/personajes/cassiopedia.png"
     },
     {
         "name":"Cho'gath",
         "id":21,
-        "line":"top"
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/cho.png"
     },
     {
         "name":"Corki",
         "id":22,
-        "line":"adc"
+        "line":"adc",
+        "img": "../../../../../assets/Img/personajes/corki.png"
     },
     {
         "name":"Darius",
         "id":23,
-        "line":"top"
+        "line":"top",
+        "img": "../../../../../assets/Img/personajes/darius.png"
     }
 ]

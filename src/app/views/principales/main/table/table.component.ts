@@ -19,6 +19,42 @@ export class TableComponent implements OnInit {
     // this.consoleLog(data[0].name)
   }
 
+  top() {
+    if(!this.support){
+      this.support="top";
+    } else{
+      this.support="";
+    }
+    this.show = !this.show
+    console.log(this.show);
+  }
+  jg() {
+    if(!this.support){
+      this.support="jungle";
+    } else{
+      this.support="";
+    }
+    this.show = !this.show
+    console.log(this.show);
+  }
+  mid() {
+    if(!this.support){
+      this.support="mid";
+    } else{
+      this.support="";
+    }
+    this.show = !this.show
+    console.log(this.show);
+  }
+  adc() {
+    if(!this.support){
+      this.support="adc";
+    } else{
+      this.support="";
+    }
+    this.show = !this.show
+    console.log(this.show);
+  }
   supp() {
     if(!this.support){
       this.support="supp";

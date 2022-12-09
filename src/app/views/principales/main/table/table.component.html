@@ -1,11 +1,16 @@
 <div class="personajesSeccion">
+    <button class="botonPersonajes" (click)="top()">Top</button>
+    <button class="botonPersonajes" (click)="jg()">Jg</button>
+    <button class="botonPersonajes" (click)="mid()">Mid</button>
+    <button class="botonPersonajes" (click)="adc()">ADC</button>
     <button class="botonPersonajes" (click)="supp()">Supp</button>
 </div>
 <div class="persanajeSuppLista">
     <ul class="personajesLista">
         <!-- [ngClass]="show ? 'view' : 'hide' " *ngFor="let supp of personajes | filtroClase:support" -->
-        <li *ngFor="let personaje of personajes| filtroClase:support">
-            <p class="tituloSupp">{{personaje.name}}</p>
+        <li class="personaje" *ngFor="let personaje of personajes| filtroClase:support">
+            <img src={{personaje.img}} alt={{personaje.name}}>
+            <span class="tituloPersonaje">{{personaje.name}}</span>
         </li>
     </ul>
 </div>
