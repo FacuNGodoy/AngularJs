@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Formacion } from 'src/app/models/formacion.model';
+import { DialogRef } from '@angular/cdk/dialog';
 import data from '../../table/personaje.json';
+import { MatDialog } from '@angular/material/dialog';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @Component({
   selector: 'app-register',
@@ -8,42 +12,30 @@ import data from '../../table/personaje.json';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  
+  displayedColumns = ['nombreFormacion','personajeTop','personajeJg','personajeMid','personajeADC','personajeSupp','edit','delete']
+  
+  formaciones: Formacion[] = [
+    new Formacion(1, 'lalaa','asdasd','asdasd','asdasd','asdasd','asdasd')
+  ]
+  
+  constructor(private readonly dialogService: MatDialog){}
 
-  personajes = data;
+  addFormacion(){
+    const dialog = this.dialogService.open(FormularioComponent)
 
-  nombreFormacionControl = new FormControl('', [Validators.required, Validators.minLength(5)])
-  personajeTopControl= new FormControl('', [Validators.required])
-  personajeJgControl= new FormControl('', [Validators.required])
-  personajeMidControl= new FormControl('', [Validators.required])
-  personajeADCControl= new FormControl('', [Validators.required])
-  personajeSuppControl= new FormControl('', [Validators.required])
-
-  registerForm = new FormGroup({
-    nombreFormacion: this.nombreFormacionControl,
-    formacion: new FormGroup({
-      top: new FormGroup({
-        personajeTop: this.personajeTopControl
-      }),
-      jg: new FormGroup({
-        personajeJg: this.personajeJgControl
-      }),
-      mid: new FormGroup({
-        personajeMid: this.personajeMidControl
-      }),
-      adc: new FormGroup({
-        personajeADC: this.personajeADCControl
-      }),
-      supp: new FormGroup({
-        personajeSupp: this.personajeSuppControl
-      })
+    dialog.afterClosed().subscribe((value) => {
+      console.log(value);
+      if (value) {
+        const lastId = this.formaciones[this.formaciones.length - 1]?.id;
+        this.formaciones = [...this.formaciones, new Formacion(lastId + 1, value.nombreFormacion, value.personajeTop, value.personajeJg, value.personajeMid, value.personajeADC, value.personajeSupp)];
+      }
     })
-  })
-
-  onSubmit() {
-    console.log(this.registerForm.value);    
   }
 
-  constructor() { }
+  removeFormacion(formacion: Formacion) {
+    this.formaciones = this.formaciones.filter((form) => form.id !== formacion.id );
+  }
 
   ngOnInit(): void {
   }

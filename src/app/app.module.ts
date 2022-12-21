@@ -10,6 +10,11 @@ import { TableComponent } from './views/principales/main/table/table.component';
 import { FiltroClasePipe } from './pipes/filtro-clase.pipe';
 import { RegisterComponent } from './views/principales/main/table/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MyMaterialModule } from './modules/my-material.module';
+import { FormularioComponent } from './views/principales/main/table/register/formulario/formulario.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +25,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     TableComponent,
     FiltroClasePipe,
     RegisterComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MyMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,11 @@
 *{
-    font-family: "lol";
     margin: 0px;
     padding: 0px;
 }
-.contenedor{
+td{
+    font-family: "lol";
+}
+    .contenedor{
     background-color: #051c24;
     width: 100%;
     display: flex;
@@ -18,7 +20,13 @@
     color: black;
     border-radius: 20px;
 }
-
+.formacion{
+    font-family: "lol";
+    font-size: 25px;
+}
+.nombreFormacion{
+    font-size: 20px;
+}
 .formulario{
     width: 400px;
 }
@@ -31,4 +39,10 @@
 }
 .linea{
     width: 50px;
+    font-size: 20px;
+    margin: 0px;
+    font-family: "lol";
+}
+table {
+    width: 100%;
 }

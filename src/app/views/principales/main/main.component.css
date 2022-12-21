@@ -1,5 +1,5 @@
 .carrusel{
-    height: 700px;
+    height: 500px;
 }
 .titulo{
     color: white;
@@ -8,10 +8,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 300px;
+    font-family: "lol";
 }
 .carruselImg{
     height: 950px;
 }
 .titulo h5{
     font-size: 90px;
+    font-family: "lol";
+    margin-bottom: 190px;
 }
