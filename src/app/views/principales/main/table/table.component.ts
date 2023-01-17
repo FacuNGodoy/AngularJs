@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import data from '../table/personaje.json';
-
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { map, Observable } from 'rxjs';
+import { PersonajesService } from 'src/app/services/personajes.service';
 
 @Component({
   selector: 'app-table',
@@ -12,11 +14,21 @@ export class TableComponent implements OnInit {
   show: boolean=false;
   support: string="";
   personajes = data;
+  getDataCharacter$: Observable<any>;
 
-  constructor() { }
+  constructor(public firestoreService: PersonajesService) {}
 
   ngOnInit(): void {
     // this.consoleLog(data[0].name)
+    this.getCharacter()
+  }
+
+  getCharacter(){
+    this.getDataCharacter$= this.firestoreService.getCharacters()
+      .pipe(
+        map((names: any) => names.map((name: any) => name.payload.doc.data()
+          ))
+      );
   }
 
   top() {

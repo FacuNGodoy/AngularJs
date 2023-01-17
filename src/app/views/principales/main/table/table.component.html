@@ -22,8 +22,7 @@
 </div>
 <div>
     <ul class="personajesLista">
-        <!-- [ngClass]="show ? 'view' : 'hide' " *ngFor="let supp of personajes | filtroClase:support" -->
-        <li class="personaje" *ngFor="let personaje of personajes| filtroClase:support">
+        <li class="personaje" *ngFor="let personaje of getDataCharacter$|async | filtroClase:support">
             <img src={{personaje.img}} alt={{personaje.name}}>
             <span class="tituloPersonaje">{{personaje.name}}</span>
         </li>
